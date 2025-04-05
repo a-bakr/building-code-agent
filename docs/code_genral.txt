@@ -1,0 +1,151 @@
+GENERAL REQUIREMENTS (Apply to most habitable spaces unless noted)
+Minimum Ceiling Height (Habitable Spaces): [e.g., 2300 mm (approx. 7'6")] or [e.g., 2100 mm (approx. 7'0")] - *Specify code req.*
+Minimum Ceiling Height (Bathrooms, Laundry, Halls): [e.g., 2100 mm (approx. 7'0")] or [e.g., 2030 mm (approx. 6'8")] - *Specify code req.*
+Heating: Required provision for maintaining [e.g., 20°C (68°F)] or [e.g., 22°C] - *Specify code req.*
+Smoke Alarms: Required locations [List locations: e.g., Each sleeping room, outside sleeping areas, each level including basements], Interconnected [Yes/No], Power Source [Hardwired with battery backup / Battery only]
+Carbon Monoxide Alarms: Required locations [List locations: e.g., Outside sleeping areas in dwelling units with fuel-burning appliances or attached garages], Interconnected [Yes/No], Power Source [Hardwired / Battery / Plug-in]
+Emergency Egress & Rescue Openings (Bedrooms & Basements): Minimum Net Clear Opening Area [e.g., 0.35 m²], Minimum Clear Dimension (Width or Height) [e.g., 380 mm (approx. 15")], Maximum Sill Height from Floor [e.g., 1100 mm (approx. 44")] or [e.g., 1000 mm or 1500 mm - Check specific code]
+Safety Glazing (Hazardous Locations): Required at [List locations: e.g., Doors, Sidelites, Windows near doors, tubs, showers, stairs, large panes near floor]
+
+---
+1. LIVING ROOM / FAMILY ROOM
+Minimum Floor Area: [Specify if required, e.g., 11 m²]
+Minimum Horizontal Dimension: [Specify if required, e.g., 2.1 m]
+Natural Light: Glazing Area Min % of Floor Area [e.g., 10% or 5% depending on room type/code]
+Natural Ventilation: Openable Area Min % of Floor Area [e.g., 5% or 2.5%] (or Mechanical Ventilation provided)
+Electrical Outlets: Spacing [e.g., No point along wall > 1.8 m from outlet], Min Number per Wall [Specify], AFCI/RCD Protection Required [Specify Yes/No based on local electrical code]
+Lighting Outlets: Switch-controlled lighting outlet required [Yes/No]
+
+---
+2. KITCHEN
+Minimum Floor Area: [Specify if required, often combined with dining]
+Natural Light: Glazing Area Min % of Floor Area [e.g., 10%]
+Natural Ventilation: Openable Area Min % of Floor Area [e.g., 5%] (or Mechanical Ventilation)
+Mechanical Ventilation (Range Hood/Exhaust Fan): Required [Yes/No], Capacity [e.g., 50 L/s intermittent / 10 L/s continuous], Ducted to exterior [Yes/No]
+Electrical Outlets (General): Spacing [As per Living Room]
+Electrical Outlets (Countertop): Spacing [e.g., No point along counter > 600 mm / 1200 mm from outlet - Check code], Min number of circuits [Specify], GFCI/RCD Protection Required [Yes/No, typically YES for countertop/near sink outlets]
+Electrical Outlets (Specific Appliances): Dedicated circuits for [e.g., Refrigerator, Dishwasher, Disposal, Microwave, Range/Cooktop/Oven]
+AFCI/RCD Protection Required: [Specify Yes/No based on local electrical code]
+Lighting Outlets: Switch-controlled lighting outlet required [Yes/No]
+Floor Surface: [Material type, consider moisture resistance]
+Wall Surface (Behind cooktop/sink): [Material type, consider cleanability/fire resistance]
+
+---
+3. DINING ROOM / AREA
+Minimum Floor Area: [Specify if required, e.g., 7 m² if separate room]
+Minimum Horizontal Dimension: [Specify if required, e.g., 2.1 m]
+Natural Light: Glazing Area Min % of Floor Area [e.g., 10%]
+Natural Ventilation: Openable Area Min % of Floor Area [e.g., 5%] (or Mechanical Ventilation)
+Electrical Outlets: Spacing [As per Living Room], AFCI/RCD Protection Required [Specify Yes/No]
+Lighting Outlets: Switch-controlled lighting outlet required [Yes/No, typically for switched receptacle if no fixture]
+
+---
+4. BEDROOM(S)
+Minimum Floor Area: [e.g., 7 m² or 9 m² - Check code]
+Minimum Horizontal Dimension: [e.g., 2.1 m]
+Natural Light: Glazing Area Min % of Floor Area [e.g., 5% or 10%]
+Natural Ventilation: Openable Area Min % of Floor Area [e.g., 2.5% or 5%] (or Mechanical Ventilation)
+Egress Window/Door: Required [YES], Meets Egress Requirements [Yes/No - Reference General Req.]
+Electrical Outlets: Spacing [As per Living Room], AFCI/RCD Protection Required [Specify Yes/No]
+Lighting Outlets: Switch-controlled lighting outlet required [Yes/No]
+Smoke Alarm: Required in room [Yes/No - Reference General Req.]
+Closet: Min Depth [If provided], Lighting Required [Yes/No]
+
+---
+5. BATHROOM(S) (Full/Half)
+Minimum Floor Area: [Specify if required, often defined by fixture clearances]
+Fixture Clearances: Front [e.g., 530 mm or 760 mm for WC, Lav], Side [e.g., 380 mm or 400 mm CL to wall for WC] - *Check specific code*
+Ceiling Height (Over fixtures): [May have specific allowances, e.g., 2030 mm (6'8") or 2100 mm over fixtures]
+Natural Light: Glazing Area Min [e.g., 0.3 m²] (Alternative: Mechanical Vent)
+Mechanical Ventilation: Required [Yes/No, typically YES if no qualifying window], Capacity [e.g., 25 L/s intermittent / 10 L/s continuous], Switch Type [Specify, e.g., Humidistat, Timer, Standard Switch], Ducted to exterior [Yes/No]
+Electrical Outlets: Min 1 near basin [Yes/No], GFCI/RCD Protection Required [Yes/No, typically YES for all outlets]
+AFCI/RCD Protection Required: [Specify Yes/No]
+Lighting Outlets: Switch-controlled lighting required [Yes/No], Fixture over Tub/Shower rated for [Damp/Wet] location (IP Rating may be specified)
+Water-Resistant Surfaces: Required at [e.g., Tub/Shower walls up to 1800 mm, Floors]
+
+---
+6. HALLWAYS / CORRIDORS
+Minimum Width: [e.g., 900 mm] or [e.g., 1000 mm] or [e.g., 1100 mm (barrier-free)] - *Specify code req.*
+Ceiling Height: [Reference General Req.]
+Electrical Outlets: Required if length > [e.g., 3 m], Spacing [Specify], AFCI/RCD Protection Required [Specify Yes/No]
+Lighting: Required [Yes/No], Switch locations [e.g., At each end if > 3m or stairs involved]
+Smoke Alarm: Required [Yes/No - Reference General Req.]
+
+---
+7. STAIRS (Interior)
+Minimum Width: [e.g., 900 mm] or [e.g., 1000 mm] - *Specify code req.*
+Headroom (Minimum): [e.g., 2050 mm] or [e.g., 2000 mm] - *Specify code req.*
+Riser Height (Max): [e.g., 200 mm] or [e.g., 190 mm], (Min): [e.g., 125 mm] Variation [e.g., Max 5 mm or 10 mm difference]
+Tread Depth (Min): [e.g., 250 mm] or [e.g., 255 mm], Variation [e.g., Max 5 mm or 10 mm difference]
+Nosing Profile/Radius: [Specify if required, e.g., Max radius 13 mm]
+Landings: Required at [Top/Bottom/Intermediate if rise > 3.7 m], Minimum Dimension [e.g., Width of stair x Width of stair, e.g., 900x900 mm]
+Handrails: Required on [One side / Both sides if width > X mm], Height [e.g., 865-965 mm] or [e.g., 900-1070 mm], Continuity [Continuous], Grip Size/Shape [Specify code limits, e.g., 30-50 mm diameter], Clearance to wall [e.g., 40 mm or 50 mm]
+Guards (at open sides of stairs/landings): Required if drop > [e.g., 600 mm or 1000 mm], Minimum Height [e.g., 900 mm (on stair flight) / 1070 mm (at landings/horizontal)], Opening Limitations (Sphere test) [e.g., 100 mm sphere cannot pass]
+
+---
+8. LAUNDRY ROOM / AREA
+Ventilation: Required [Yes/No], Natural or Mechanical [Specify]
+Dryer Vent: Material [e.g., Rigid smooth metal], Length Limit [e.g., 10 m minus bends - check manufacturer/code], Termination [Exterior, with backdraft damper], Cleanout access [Yes/No]
+Electrical Outlets: Min 1 for Washer [Yes/No], Dedicated Circuit [Yes/No], GFCI/RCD Required [Yes/No, typically YES]
+Dryer Outlet: Type [Specify Voltage/Amperage], Location [Specify]
+Gas Connection (if applicable): Shutoff valve required [Yes/No], Sediment Trap [Yes/No]
+Water Supply/Drainage: Connections for washer [Yes/No], Standpipe height [Specify range, e.g., 600-1000 mm]
+Floor Drain: Required [Yes/No]
+AFCI/RCD Protection Required: [Specify Yes/No]
+
+---
+9. GARAGE (Attached)
+Fire Separation from Dwelling: Walls [Specify Fire Resistance Rating, e.g., 30 min / 60 min, and materials], Ceiling (if living space above) [Specify Fire Resistance Rating and materials], Penetrations sealed [Yes/No, with rated materials]
+Doors to Dwelling: Type [Specify fire rating, e.g., 20-min or 30-min Fire Rated Door Assembly], Self-closing device [Yes/No], Threshold Curb/Sill Height difference [e.g., 100 mm curb or slope away, check specific code]
+Floor Surface: [e.g., Concrete], Material [Non-combustible], Sloped to drain/door [Yes/No]
+Ventilation: Required [Yes/No], Natural or Mechanical [Specify]
+Electrical Outlets: Min 1 per car space [Yes/No], GFCI/RCD Protection Required [Yes/No, typically YES for all outlets]
+Lighting Outlets: Switch-controlled lighting required [Yes/No]
+Carbon Monoxide Alarm: Required in dwelling adjacent to garage [Yes/No - Reference General Req.]
+Vehicle Door Opener Safety: Auto-reverse required [Yes/No], Safety sensors required [Yes/No]
+
+---
+10. BASEMENT (Habitable / Finished Portions)
+(Treat as Living Room, Bedroom, etc. based on use - See relevant sections above)
+Egress: Required [Yes/No - Reference General Req. if used as sleeping area]
+Insulation: Required [Yes/No], RSI Value (Metric R-Value) or U-Value [Specify for walls/floor]
+Moisture/Water Control: Damp proofing/Waterproofing required [Yes/No], Foundation Drain [Yes/No]
+Stairs: Must meet Stair requirements [Yes/No - Reference Section 7]
+
+---
+11. BASEMENT / CRAWL SPACE (Unfinished / Storage / Utility)
+Access Opening: Minimum Size [e.g., 450x600 mm for crawl, 550x750 mm for attic with equip] - *Specify code req.*
+Ventilation: Required [Yes/No], Method [Vents / Conditioned / Mechanical], Vent Area Ratio [e.g., 1 m² per 150 m² floor area, reducible with vapor barrier]
+Insulation (if applicable): Location [e.g., Floor above / Foundation walls], RSI Value (Metric R-Value) or U-Value [Specify]
+Vapor Retarder/Barrier: Required on ground [Yes/No], Material/Thickness [e.g., 0.15 mm poly (6-mil)]
+Lighting: Required near equipment [Yes/No]
+Electrical Outlet: Required near equipment [Yes/No], GFCI/RCD required [Yes/No, typically YES]
+Fire Blocking/Draft Stopping: Required at specific intervals/locations [Yes/No]
+
+---
+12. ATTIC (Accessible for Storage / Mechanical Equipment)
+Access Opening: Minimum Size [e.g., 550x750 mm], Location [Hallway/Closet], Headroom above opening [e.g., 760 mm]
+Ventilation: Required [Yes/No], Method [Soffit/Ridge/Gable], Net Free Area Ratio [e.g., 1/150 or 1/300 with balanced high/low vents]
+Insulation: Required [Yes/No], Location [e.g., Attic floor / Rafters], RSI Value (Metric R-Value) or U-Value [Specify], Baffles at eaves [Yes/No]
+Walkway to Equipment: Required [Yes/No], Width [e.g., 600 mm], Material [Specify]
+Service Platform at Equipment: Required [Yes/No], Size [e.g., 750x750 mm]
+Lighting: Required near equipment/opening [Yes/No], Switch Location [Specify]
+Electrical Outlet: Required near equipment [Yes/No]
+Fire Blocking/Draft Stopping: Required [Yes/No]
+
+---
+13. CLOSETS
+Lighting: Required [Yes/No, typically yes for walk-ins], Fixture Type Restrictions [e.g., Maintain clearance from storage, specific luminaire types]
+Ventilation: Generally not required unless very large or specific use.
+AFCI/RCD Protection: Included on circuit [Yes/No, follows room circuit]
+
+---
+14. EXTERIOR (Decks, Porches, Balconies - attached to dwelling)
+Guards: Required if walking surface > [e.g., 600 mm] above grade, Minimum Height [e.g., 900 mm (if height <= 1800mm) or 1070 mm (if height > 1800mm) - check code], Opening Limitations [e.g., 100 mm sphere]
+Stairs: Must meet Stair requirements [Yes/No - Reference Section 7, may have different guard heights/opening limits for exterior]
+Handrails (Stairs): Required [Yes/No - Reference Section 7]
+Ledger Board Attachment: Method [Specify bolts/connectors per code/engineering], Flashing Required [Yes/No]
+Footings: Required [Yes/No], Depth below frost line [Specify Depth in mm]
+Decking Material/Spacing: [Specify]
+Electrical Outlet: Required at front/back [Yes/No], Weatherproof [Yes/No], GFCI/RCD Required [Yes/No, typically YES]
+Lighting Outlet (at required egress doors): Required [Yes/No]

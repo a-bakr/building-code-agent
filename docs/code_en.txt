@@ -1,0 +1,72 @@
+[
+  {
+    "documentTitle": "Egyptian Official Gazette - Issue 82 bis (a) - April 8, 2009",
+    "decree": {
+      "issuingAuthority": "Minister of Housing, Utilities and Urban Development",
+      "decreeNumber": "144 of 2009",
+      "subject": "Issuance of the Executive Regulations for the Building Law promulgated by Law No. 119 of 2008",
+      "preamble": [
+        "After reviewing Law No. 136 of 1948 concerning the provisions of renting and selling premises and organizing the relationship between landlords and tenants;",
+        "And Law No. 43 of 1979 concerning the Local Administration System and its executive regulations and amendments;",
+        "And Law No. 49 of 1977 concerning renting and selling premises and organizing the relationship between landlords and tenants and its executive regulations;",
+        "And Law No. 136 of 1981 concerning some provisions related to renting and selling premises and organizing the relationship between landlords and tenants and its executive regulations;",
+        "And the Building Law promulgated by Law No. 119 of 2008;"
+      ],
+      "decision": {
+        "article1": "The provisions of the attached Executive Regulations for the Building Law promulgated by Law No. 119 of 2008 shall be applied.",
+        "article2": "The provisions of the first chapter (Organizing the Union of Occupants) from the fourth part of the attached regulations shall apply to all existing buildings and projects established by cooperative housing associations, whether for housing or administrative purposes.",
+        "article3": "Any provision contrary to the provisions of the attached regulations shall be repealed.",
+        "article4": "This decision shall be published in the Egyptian Official Gazette and shall come into force from the day following the date of its publication."
+      },
+      "issuanceDate": "April 9, 2009",
+      "ministerName": "Ahmed El-Maghraby",
+      "ministerTitle": "Minister of Housing, Utilities and Urban Development"
+    },
+    "executiveRegulationsTitle": "Executive Regulations for the Building Law promulgated by Law No. 119 of 2008",
+    "definitions": {
+      "partTitle": "Preliminary Provisions",
+      "chapterTitle": "Definitions",
+      "introduction": "In applying the provisions of these regulations, the following words and phrases shall have the meanings assigned to each of them:",
+      "terms": {
+        "The Law": "The Building Law promulgated by Law No. 119 of 2008.",
+        "The Council": "The Supreme Council for Planning and Urban Development formed by the Prime Minister's Decree No. 298 of 2008.",
+        "The Authority": "The General Authority for Urban Planning established by Presidential Decree No. 1093 of 1973.",
+        "Urban Cluster": "The built-up area in the city or village or activities associated with it, including the area subject to urban expansion.",
+        "Adjacent Residential Area": "An integrated group of dwellings with their public facilities and necessary services on the basis of providing basic services such as primary education and access to public services for its residents within walking distance.",
+        "Total Population Density for the City or Village": "The total population attributed to the urban cluster area of the city or village after deducting water bodies, cemeteries, agricultural lands, desert and sandy lands, and lands of regional and national character.",
+        "Net Population Density": "The product of dividing the number of residential units by the total residential area after excluding roads and public areas.",
+        "Congestion Rate": "The total number of family members residing in one room, calculated as an average for each region within the city or village.",
+        "Block": "A piece of land surrounded on all sides by streets or roads or natural boundaries.",
+        "Land Plot": "A part of a block or any area of land designated as a unit for ownership or development with its urban development works.",
+        "Land Plot Area": "The total horizontal area of the land plot.",
+        "Land Use Intensity (Building Density)": "Calculated as the maximum ratio between the total built-up floor areas in the building and the area of the land plot on which the building is located.",
+        "Planning and Building Requirements": "The restrictions stated in the detailed plan regarding land subdivision and building according to the general strategic plan.",
+        "Divider": "Any natural or artificial person undertaking the subdivision of land.",
+        "Land Subdivision Plan": "A map showing the details and data of the subdivision project, including measurements, definitions, street and square data, public utilities, parks, open spaces, public service areas, and plots resulting from the subdivision and related restrictions.",
+        "Subdivision Project": "A map of the proposed subdivision prepared with the final form ready for dealing and registration, attached with the necessary documents clarifying measurements, definitions, street and square data, public utilities, parks, open spaces, public service areas, and plots resulting from the subdivision and related restrictions.",
+        "Special Conditions List": "A set of conditions and obligations related to the subdivision project agreed upon between the divider and the buyers, defining their rights and obligations towards each other and towards the subdivision.",
+        "Land Use": "The purpose for which the land or activity permitted to be practiced on it is allocated or prepared, whether it is vacant land or occupied by a building or facility, or is intended for development, according to the uses permitted by the plan.",
+        "Residential Area (Urban Planning)": "A project containing services within it according to the standards set for services and the needs of the residents based on the surrounding services in the project area.",
+        "Development Area": "Lands added to the urban cluster of the city or village for future urban expansion, allowing various uses according to the approved strategic and detailed plans.",
+        "Basic Infrastructure": "Facilities and installations necessary to meet the public needs such as transportation systems, cars, rainwater drainage networks, water supply and distribution networks, sewage and treatment plants, waste disposal sites, electricity and communication networks, and other related facilities.",
+        "Public Services": "Daily services or institutions needed by the population and provided by the state or the private sector according to strategic plans, such as educational, health, social, religious, commercial, cultural, administrative, touristic, recreational services, etc.",
+        "Strategic Plans": "Plans prepared for cities and villages or areas designated for urban development, determining future needs and development programs.",
+        "Recreational Area": "An area of land or water designated by the plan, or part thereof, for recreational or public entertainment purposes, including buildings and services.",
+        "Commercial Areas": "Lands or places designated for commercial activities.",
+        "Internal Trade Development Authority": "Established by Presidential Decree No. 354 of 2008.",
+        "Public Road": "A space or land designated for public passage, dedicated to public benefit.",
+        "Private Road": "A space or land owned by several individuals for passage to their properties, where this road is not connected to the public road.",
+        "Road with End Service (Non-Through Road)": "A road with one entrance and a sufficient turning space for vehicles to turn back safely for traffic.",
+        "The Authority (NOUH)": "The National Organization for Urban Harmony established by Presidential Decree No. 37 of 2001.",
+        "Administrative Council": "The Administrative Council of the National Organization for Urban Harmony.",
+        "Harmonized Area": "An area characterized by integrated urban fabric resulting from the accumulation of eras or representing a specific planning thought in a defined historical stage, or characterized by unified architectural styles, or having a distinct urban character.",
+        "Civilizational Value": "The urban form that society agrees has expressive significance of the cultural dimension over time.",
+        "Public Character": "The perceived urban characteristics of the area through the senses, which are remembered and distinguished from others.",
+        "Guiding Model": "Projects implemented by the authority itself or under its supervision or by others to serve as a model for applying the foundations and criteria of urban harmony, which should be followed as a guiding framework.",
+        "Advertising Elements": "Any product produced by an entity or individual or element designed and executed for commercial purposes.",
+        "Guiding Signage": "Any visual product carrying informational or non-promotional messages intended for public benefit.",
+        "Urban Harmony Elements": "Elements used in various fields of urban harmony such as pavements, advertisements, guiding signs, green areas, trees, flowers, building facades, artistic works in urban spaces such as statues, murals, fountains, lighting elements, external furniture, elements influencing urban spaces such as seating, kiosks, telephone booths, bus stops, public toilets, mailboxes, trash bins, etc."
+      }
+    }
+  }
+]
