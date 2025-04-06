@@ -31,11 +31,17 @@ def text_extraction(img_path: str):
         image_base64 = base64.b64encode(image_bytes).decode('utf-8')
 
         # Prepare the prompt including the base64 image data
+        text = '\n'.join([
+            "Extract all the text from this image.",
+            "convert it into english.",
+            " Return only the extracted text, no explanations.",
+            "if there rooms return only json, each room should have it's own data.{name, width, height, area}",
+        ])
         message = [
             HumanMessage(content=[
                 {
                     'type': 'text',
-                    'text': ("Extract all the text from this image. convert it into english. Return only the extracted text, no explanations.")
+                    'text': (text)
                 },
                 {
                     "type": "image_url",
@@ -57,3 +63,5 @@ def text_extraction(img_path: str):
         error_mes = f"Error extracting text: {str(e)}"
         print(error_mes)
         return ""
+    
+    

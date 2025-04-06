@@ -1,3 +1,9 @@
+---
+title: building-code-agent
+app_file: app.py
+sdk: gradio
+sdk_version: 5.23.3
+---
 # Building Code Agent
 
 ## Description

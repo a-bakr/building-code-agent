@@ -28,7 +28,7 @@ def assistant(state: State):
     
     massage = '\n'.join([
         "You are a helpful agent that can analyse images and extract data.",
-        "You can retrieve building code information form the building_code_retriever tool for each room"
+        "You can retrieve building code information form a vectordb for each room"
         "You have access to the following tools:",
         "- text_extraction: Extract text from images",
         "- building_code_retriever: Get building code regulations for specific rooms or building",
@@ -60,7 +60,7 @@ def run_agent(image_path: str, question: str):
     agent = create_graph()
 
     prompt = "\n".join([
-        "The user is asking for some information.",
+        "Answer the user question without extra information.",
         f"User question: {question}",
         "You can extract text from images and retrieve building code information as needed to answer the question.",
     ])
@@ -85,14 +85,3 @@ def run_agent(image_path: str, question: str):
     }
     
     return res
-
-if __name__ == "__main__":
-    img_path = "./samples/01.png"  # Optional image path
-    prompt = "هل هذا المخطط مطابق لقانون البناء الموحد المصري؟"
-
-    result = run_agent(img_path, prompt)
-    print("=" * 50)
-    print(result['tool_outputs'])
-    print("=" * 50)
-    print(result['result'])
-    print("=" * 50)
