@@ -66,7 +66,7 @@ with gr.Blocks(title="Building Code Assistant") as demo:
         examples=[
             ["samples/01.png", "هل هذة الغرف مطابقة لاشتراطات البناء؟"],
             ["samples/02.png", "Is the Bedroom comply with building code?"],
-            ["samples/03.png", "Is the bedroom space sufficient area to the building code?"],
+            ["samples/03.png", "Is the bedroom's area  sufficient base on the building code?"],
         ],
         inputs=[image_input, question_input]
     )
