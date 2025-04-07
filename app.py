@@ -1,5 +1,5 @@
 import gradio as gr
-from agent import run_agent
+from core import run_agent
 import os
 
 def process_query(image, question):

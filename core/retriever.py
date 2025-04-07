@@ -69,6 +69,7 @@ def building_code_retriever(query: str):
     if _vector_db is None:
         _vector_db = initialize_vector_db()
         
+    print(f"Get Data for {query}....")
     # Retrieve similar documents
     results = _vector_db.similarity_search(query, k=1)
     

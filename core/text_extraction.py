@@ -37,6 +37,7 @@ def text_extraction(img_path: str):
             " Return only the extracted text, no explanations.",
             "if there rooms return only json, each room should have it's own data.{name, width, height, area}",
         ])
+        
         message = [
             HumanMessage(content=[
                 {

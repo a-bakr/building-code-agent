@@ -6,8 +6,8 @@ from langchain_openai import ChatOpenAI
 from langgraph.graph import START, StateGraph
 from langgraph.prebuilt import tools_condition, ToolNode
 
-from tools import text_extraction
-from retriever import building_code_retriever
+from core.text_extraction import text_extraction
+from core.retriever import building_code_retriever
 
 model = "google/gemini-2.5-pro-exp-03-25:free"
 model = "gpt-4o-mini"
@@ -20,6 +20,8 @@ llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=False)
 
 class State(TypedDict):
     input_file: Optional[str]
+    extracted_text: Optional[str]
+    building_code: Optional[str]
     messages: Annotated[list[AnyMessage], add_messages]
     
 def assistant(state: State):
@@ -27,17 +29,21 @@ def assistant(state: State):
     image = state['input_file']
     
     massage = '\n'.join([
-        "You are a helpful agent that can analyse images and extract data.",
-        "You can retrieve building code information form a vectordb for each room"
+        "You are a helpful building code assistant.",
+        "You can extract text from floorplan images.",
+        "You can check if this text comply with the building code.",
+        "you sould create short report."
         "You have access to the following tools:",
         "- text_extraction: Extract text from images",
-        "- building_code_retriever: Get building code regulations for specific rooms or building",
+        "- building_code_retriever: Get building code regulations for specific room, you can call me mulitple time to get all rooms data",
+        "You should answer in the user language"
         f"Currently the loaded image is : {image}"
     ])
     sys_msg = SystemMessage(massage)
     
     messages = [sys_msg] + state['messages']
     res = llm_with_tools.invoke(messages)
+    
     return {'messages': [res], "input_file": image}
 
 def create_graph():
@@ -62,7 +68,7 @@ def run_agent(image_path: str, question: str):
     prompt = "\n".join([
         "Answer the user question without extra information.",
         f"User question: {question}",
-        "You can extract text from images and retrieve building code information as needed to answer the question.",
+        "You can extract text from images and retrieve building code information for any room as needed to answer the question.",
     ])
         # "The final answer should be in the user language"
     
@@ -73,10 +79,13 @@ def run_agent(image_path: str, question: str):
     })
     
     # Process the result
-    tool_outputs = {}
+    tool_outputs = {
+        "text_extraction": "",
+        "building_code_retriever": ""
+    }
     for m in messages['messages']:
         if hasattr(m, 'name') and m.name in ['text_extraction', 'building_code_retriever']:
-            tool_outputs[m.name] = m.content
+            tool_outputs[m.name] += m.content
     
     result = messages['messages'][-1].content
     res = {
