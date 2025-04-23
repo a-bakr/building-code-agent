@@ -10,5 +10,5 @@ langchain_chroma==0.2.2
 python-dotenv==1.0.1
 IPython>=8.0.0
 rank_bm25==0.2.2
-gradio==5.23.3
+flask==3.1.0
 jq==1.8.0

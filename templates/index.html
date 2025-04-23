@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Building Code Assistant</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<i class="fas fa-building me-2"></i>
+					Building Code Assistant
+				</a>
+			</div>
+		</nav>
+
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header bg-transparent">
+							<h5 class="mb-0"><i class="fas fa-upload me-2"></i>Upload & Query</h5>
+						</div>
+						<div class="card-body">
+							<form id="queryForm" enctype="multipart/form-data">
+								<div class="upload-area mb-3" id="uploadArea">
+									<input
+										type="file"
+										class="form-control visually-hidden"
+										id="imageInput"
+										name="image"
+										accept="image/*"
+										required
+									/>
+									<div id="dropZone" class="drop-zone">
+										<div id="uploadPrompt">
+											<i class="fas fa-cloud-upload-alt fa-2x mb-2"></i>
+											<p>Drag & drop architectural plan or click to browse</p>
+										</div>
+										<div id="imagePreview" class="d-none">
+											<img src="" id="previewImg" class="img-fluid rounded" />
+											<button
+												type="button"
+												id="changeImageBtn"
+												class="btn btn-sm btn-outline-secondary mt-2"
+											>
+												Change image
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="questionInput" class="form-label">
+										<i class="fas fa-question-circle me-1"></i>Your Question
+									</label>
+									<textarea
+										class="form-control"
+										id="questionInput"
+										name="question"
+										rows="2"
+										placeholder="What are the building code requirements for this plan?"
+										required
+									></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary w-100" id="submitBtn">
+									<i class="fas fa-paper-plane me-1"></i>Submit
+								</button>
+
+								<div class="divider mt-4 mb-3">
+									<span>OR TRY EXAMPLES</span>
+								</div>
+
+								<div class="examples-container">
+									<div
+										class="example-card"
+										data-image="samples/01.png"
+										data-question="هل غرف المعيشة مطابقة لقانون البناء؟"
+									>
+										<div class="example-img">
+											<img
+												src="{{ url_for('static', filename='samples/01.png') }}"
+												class="img-fluid rounded"
+											/>
+										</div>
+										<div class="example-text">
+											<p>هل غرف المعيشة مطابقة لقانون البناء؟</p>
+										</div>
+									</div>
+									<div
+										class="example-card"
+										data-image="samples/02.png"
+										data-question="Is the Bedroom comply with building code?"
+									>
+										<div class="example-img">
+											<img
+												src="{{ url_for('static', filename='samples/02.png') }}"
+												class="img-fluid rounded"
+											/>
+										</div>
+										<div class="example-text">
+											<p>Is the Bedroom comply with building code?</p>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="card shadow-sm info-card">
+						<div class="card-body">
+							<h5><i class="fas fa-info-circle me-2"></i>How to use</h5>
+							<ol>
+								<li>Upload an architectural plan or blueprint</li>
+								<li>Ask a question about building codes or regulations</li>
+								<li>Get analysis based on Egyptian building codes</li>
+							</ol>
+							<div class="language-support">
+								<i class="fas fa-language me-1"></i> Supports English and Arabic
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-8">
+					<div class="card shadow-sm mb-4">
+						<div class="card-header bg-transparent d-flex justify-content-between align-items-center">
+							<h5 class="mb-0"><i class="fas fa-robot me-2"></i>Assistant Response</h5>
+							<div class="response-status">
+								<span class="badge bg-secondary" id="statusBadge">Waiting for query</span>
+							</div>
+						</div>
+						<div class="card-body">
+							<div id="answerOutput" class="answer-box">
+								<div class="placeholder-content">
+									<div class="placeholder-icon">
+										<i class="fas fa-comment-dots fa-2x"></i>
+									</div>
+									<div class="placeholder-text">Submit a question to see the answer here.</div>
+								</div>
+							</div>
+
+							<div class="accordion mt-4" id="detailedInfo">
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#extractedTextCollapse"
+										>
+											<i class="fas fa-file-alt me-2"></i>Extracted Text
+										</button>
+									</h2>
+									<div
+										id="extractedTextCollapse"
+										class="accordion-collapse collapse"
+										data-bs-parent="#detailedInfo"
+									>
+										<div class="accordion-body">
+											<div id="extractedTextOutput" class="output-text-area">
+												<div class="placeholder-content small">
+													<i class="fas fa-align-left me-2"></i>No text extracted yet.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#buildingCodeCollapse"
+										>
+											<i class="fas fa-book me-2"></i>Building Code
+										</button>
+									</h2>
+									<div
+										id="buildingCodeCollapse"
+										class="accordion-collapse collapse"
+										data-bs-parent="#detailedInfo"
+									>
+										<div class="accordion-body">
+											<div id="buildingCodeOutput" class="output-text-area">
+												<div class="placeholder-content small">
+													<i class="fas fa-book-open me-2"></i>No building code retrieved yet.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer mt-5">
+			<div class="container">
+				<div class="text-center">
+					<p>&copy; 2025 Abdallah Bakr. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+	</body>
+</html>
