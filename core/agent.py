@@ -23,7 +23,7 @@ class State(TypedDict):
     extracted_text: Optional[str]
     building_code: Optional[str]
     messages: Annotated[list[AnyMessage], add_messages]
-    
+
 def assistant(state: State):
     
     image = state['input_file']
@@ -52,8 +52,7 @@ def create_graph():
     
     # Define nodes: these do the work
     builder.add_node('assistant', assistant)    
-    builder.add_node('tools', ToolNode(tools))    
-
+    builder.add_node('tools', ToolNode(tools))
     
     # Define edges: these determine how the control flow moves
     builder.add_edge(START, "assistant")

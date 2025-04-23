@@ -1,5 +1,5 @@
 import gradio as gr
-from core import run_agent
+from core import run_agent 
 import os
 
 def process_query(image, question):
@@ -80,5 +80,10 @@ with gr.Blocks(title="Building Code Assistant") as demo:
     You can ask questions in English or Arabic.
     """)
 
+# Create app variable for Vercel
+app = demo.app
+
 if __name__ == "__main__":
-    demo.launch(share=True, debug=True)
+    # For local development
+    port = int(os.environ.get("PORT", 7860))
+    demo.launch(server_port=port, share=True, debug=True)
