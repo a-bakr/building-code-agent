@@ -1,21 +1,22 @@
 ---
 title: building-code-agent
 app_file: app.py
-sdk: gradio
-sdk_version: 5.23.3
+sdk: flask
+sdk_version: 3.0.0
 ---
 # Building Code Agent
 
 ## Description
 
-This project implements an agent designed to assist with building codes, potentially leveraging retrieval-augmented generation (RAG) based on provided documents (like the Egyptian building law found in the `docs` folder). It appears to have a core agent logic (`agent.py`), a retrieval component (`retriever.py`), tool definitions (`tools.py`), and potentially a web interface (`app.py`).
+This project implements an agent designed to assist with building codes, leveraging retrieval-augmented generation (RAG) based on provided documents (like the Egyptian building law found in the `docs` folder). The application features a Flask web interface for easy interaction with the building code assistant.
 
-## Features (Inferred)
+## Features
 
-*   Agent-based interaction for building code queries.
-*   Retrieval-Augmented Generation (RAG) using documents in the `docs` directory.
-*   Extensible tools for agent capabilities.
-*   Potential web interface for interaction (`app.py`).
+*   Web-based interface using Flask for building code queries
+*   Agent-based interaction for answering building code questions
+*   Image analysis of architectural plans
+*   Retrieval-Augmented Generation (RAG) using documents in the `docs` directory
+*   Support for English and Arabic queries
 
 ## Installation
 
@@ -42,48 +43,69 @@ This project implements an agent designed to assist with building codes, potenti
 
 ## Usage
 
-(Please provide specific instructions on how to run the agent or application. For example, if `app.py` is a Flask or Streamlit app, mention how to start it.)
+Run the Flask application:
 
-*   **Running the main application (Example):**
-    ```bash
-    python app.py
-    ```
-*   **Using the agent directly (Example):**
-    ```bash
-    python agent.py --query "Your query about building codes"
-    ```
-*   **Experimentation:**
-    Explore the `play.ipynb` notebook for examples and testing.
+```bash
+python app.py
+```
+
+Then open your web browser and navigate to:
+```
+http://localhost:5000
+```
+
+The application will allow you to:
+1. Upload an architectural plan image
+2. Ask questions about building codes related to the plan
+3. View the analysis results, extracted text, and relevant building codes
 
 ## Project Structure
 
 ```
 .
 ├── .env.example        # Example environment variables
+├── .env                # Environment variables (create from .env.example)
 ├── .gitignore          # Git ignore file
-├── agent.py            # Core agent logic
-├── app.py              # Main application (likely web interface)
+├── app.py              # Main Flask application
 ├── building-code-agent.md # Project notes/documentation
-├── play.ipynb          # Jupyter notebook for experimentation
 ├── README.md           # This file
 ├── requirements.txt    # Python dependencies
-├── retriever.py        # RAG retriever component
-├── tools.py            # Agent tool definitions
+├── uploads/            # Temporary folder for uploaded images
+├── core/               # Core components
+│   ├── __init__.py     # Module exports
+│   ├── agent.py        # Core agent logic
+│   ├── text_extraction.py # Text extraction from images
+│   └── retriever.py    # Building code retriever component
 ├── docs/               # Documentation/data for RAG
 │   ├── code_ar.json
 │   ├── code_ar.txt
 │   ├── code_en.txt
 │   ├── code_genral.txt
 │   └── egypt_building_law.pdf
-└── samples/            # Sample images
-    ├── 01.png
-    └── 02.png
+├── static/             # Static files for web interface
+│   ├── css/            # CSS stylesheets
+│   ├── js/             # JavaScript files
+│   └── samples/        # Sample images
+└── templates/          # HTML templates
+    └── index.html      # Main application template
 ```
 
 ## Dependencies
 
-Key dependencies are listed in `requirements.txt`.
+Key dependencies are listed in `requirements.txt`:
+- Flask - Web framework
+- LangChain - For agent construction and RAG
+- OpenAI/Google Generative AI - For LLM capabilities
+- Pillow - For image processing
+- python-dotenv - For environment variables
+- Chromadb - For vector storage
+
+## API Endpoints
+
+- `GET /` - Main web interface
+- `POST /api/process` - Processes uploaded images and queries about building codes
+- `GET /samples/<sample>` - Serves sample images for examples
 
 ---
 
-*Note: This README is auto-generated based on the project structure. Please update it with more specific details, especially regarding usage and configuration.*
+*Note: Please ensure you have appropriate API keys configured in your .env file for the LLM services used in this application.*
